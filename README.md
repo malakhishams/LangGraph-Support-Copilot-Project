@@ -55,9 +55,9 @@ the **project root** (not from inside `src/`) so the `.env` file is found
 correctly:
  
 ```bash
-python src/act1_graph.py   # no API key needed — pure graph mechanics
-python src/act2_graph.py   # needs GEMINI_API_KEY — sequential chain + routing + evaluator-optimizer
-python src/act3_graph.py   # needs GEMINI_API_KEY — adds parallelization + orchestrator-worker
+python src/Act1_graph.py   # no API key needed — pure graph mechanics
+python src/Act2_graph.py   # needs GEMINI_API_KEY — sequential chain + routing + evaluator-optimizer
+python src/Act3_graph.py   # needs GEMINI_API_KEY — adds parallelization + orchestrator-worker
 ```
 
 Each script prints a log line per node as it executes (`[NODE] name -> ...`),
