@@ -50,13 +50,14 @@ GEMINI_API_KEY=your_key_here
 
 ## 2. Running each act
 
-Each act is a standalone, runnable script. Run them in order the first
-time, to see the workflow build up in complexity:
-
+Each act is a standalone, runnable script, located in `src/`. Run them from
+the **project root** (not from inside `src/`) so the `.env` file is found
+correctly:
+ 
 ```bash
-python act1_graph.py   # no API key needed — pure graph mechanics
-python act2_graph.py   # needs GEMINI_API_KEY — sequential chain + routing + evaluator-optimizer
-python act3_graph.py   # needs GEMINI_API_KEY — adds parallelization + orchestrator-worker
+python src/act1_graph.py   # no API key needed — pure graph mechanics
+python src/act2_graph.py   # needs GEMINI_API_KEY — sequential chain + routing + evaluator-optimizer
+python src/act3_graph.py   # needs GEMINI_API_KEY — adds parallelization + orchestrator-worker
 ```
 
 Each script prints a log line per node as it executes (`[NODE] name -> ...`),
