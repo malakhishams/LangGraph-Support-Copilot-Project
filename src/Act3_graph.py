@@ -347,9 +347,7 @@ if __name__ == "__main__":
     graph = build_graph()
  
     test_inputs = [
-        "hii my passwrd isnt working can u help",                     # simple -> parallel path
-        "",                                                            # fallback
-        "why is my order delayed, will i get a refund, and how do i update my shipping address for next time",  # complex -> orchestrator-worker
+        "why is my order delayed, will i get a refund, and how do i update my shipping address for next time"
     ]
  
     for raw_input in test_inputs:

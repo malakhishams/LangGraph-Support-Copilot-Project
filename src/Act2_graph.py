@@ -235,9 +235,8 @@ if __name__ == "__main__":
     graph = build_graph()
  
     test_inputs = [
-        "hii my passwrd isnt working can u help",
-        "",
-        "i want a refund for my last order it never showed up",
+        "help"
+       
     ]
  
     for raw_input in test_inputs:
